@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            width: 100%;
+            height: 500px;
+            border: 5px solid greenyellow;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #parent>div {
+            width: 45%;
+            height: 100%;
+            border: 5px solid red;
+            display: flex;
+            justify-content: space-between;
+                text-align: center;
+                font-size: 60px;
+        }
+
+        #parent>div>div {
+            width: 48%;
+            border: 2px solid blue;
+        }
+
+
+        @media screen and (max-width : 1025px) {
+            #parent>div {
+                flex-direction: column-reverse;
+                text-align: center;
+                font-size: 60px;
+            }
+
+            #parent>div>div {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div>
+            <div>Test</div>
+            <div>IMG</div>
+        </div>
+        <div>
+            <div>Text</div>
+            <div>Img</div>
+        </div>
+    </div>
+</body>
+
+</html>
