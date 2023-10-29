@@ -13,7 +13,7 @@ console.log(123 + 123)
 function add(num1, num2) {
     return num1 + num2
 }
-add(2,3)
+console.log(add(2, 3))
 
 
 
@@ -23,8 +23,8 @@ add(2,3)
 console.log(true)
 console.log(typeof (true))
 console.log(false)
-console.log(typeof (false))
-console.log(typeof('false'))
+console.log(typeof (false)) // boolean
+console.log(typeof ('false')) // string
 
 
 // undefined
@@ -40,19 +40,19 @@ console.log(typeof('false'))
 // syntax 
 var name = "Awdiz"
 console.log(name)
-console.log(typeof(name))
+console.log(typeof (name)) // string
 
 var myStudentsCount = 20;
 console.log(myStudentsCount)
-console.log(typeof(myStudentsCount))
+console.log(typeof (myStudentsCount)) // number
 
 var kuchbhi = true;
 console.log(kuchbhi)
 
 var number1 = 50;
 var number2 = 100;
-console.log(number1, number2)
-console.log(number1 + number2)
+console.log(number1, number2) // 50 100
+console.log(number1 + number2) // 150
 
 // Arthmetic operations 
 
@@ -61,11 +61,11 @@ console.log(number1 + number2)
 // var num1 = 10;
 // var num2 = 20;
 
-console.log(30 % 2)
-console.log(31 % 2)
-console.log(123456789 % 2)
-console.log(2 == 21)
-console.log(40 % 2 == 0)
+console.log(30 % 2) // 0
+console.log(31 % 2) // 1
+console.log(123456789 % 2) // 1
+console.log(2 == 21) // false
+console.log(40 % 2 == 0) // true
 
 
 // 20 / 2 = 10 
@@ -90,10 +90,10 @@ console.log(num1 / num2)
 //  == , === 
 
 console.log(2 == 2)
-console.log("2" == 2) //  check only data
-console.log("2" === 2) // check data and datatypes
-console.log("40" == 40  )
-console.log("400" === 400)
+console.log("2" == 2) //  check only data true
+console.log("2" === 2) // check data and datatypes false
+console.log("40" == 40) // true
+console.log("400" === 400) // false
 
 
 // Logical operator 
@@ -108,11 +108,11 @@ console.log("400" === 400)
 var userAge = 124;
 
 
-console.log(userAge > 91 && userAge == 24 && userAge < 25 ) 
-console.log(userAge < 19 || userAge < 90 || userAge < 124)
+console.log(userAge > 91 && userAge == 24 && userAge < 25) // false
+console.log(userAge < 19 || userAge < 90 || userAge < 124) // false
 // console.log()
 
-console.log( 2 > 1)
-console.log(4 < 2)
-console.log( 6 >= 6)
-console.log(10 <= 8 )
+console.log(2 > 1) // true
+console.log(4 < 2) // false
+console.log(6 >= 6) // true 
+console.log(10 <= 8) // false
