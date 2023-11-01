@@ -113,14 +113,14 @@ console.log(typeof myName)
 
 var myData = ["Swaraj", 25, true, "Hii", 23456, [1, 2, 3]]
 console.log(myData)
-console.log(myData.length)
+console.log(myData.length) // 6
 console.log(myData[0])
 console.log(myData[1])
 console.log(myData[2])
 console.log(myData[3])
 console.log(myData[4])
-console.log(myData[5])
-console.log(myData[5][0])
+console.log(myData[5]) // [1,2,3]
+console.log(myData[5][0]) // 1
 
 
 var students = ['jay', 'raj', 'abc'];
@@ -136,4 +136,4 @@ var number = [1, 2, 4, 5]
 number.pop(); // remove last element
 number.pop();
 number.pop();
-console.log(number)
+console.log(number) // [1]
