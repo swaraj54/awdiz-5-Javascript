@@ -7,6 +7,11 @@ for (var i = 10; i > 0; i--) {
 }
 
 
+// 1 Iteration ,  i = 10,  10 > 0 true, log(10),  i--, 10 -1 , i = 9
+// 2 Iteration ,  i = 9,   9 > 0  true, log(9), i-- 8
+// 9 Iteration , i = 1,    1 > 0 true, log(1), i--, 0
+// 10 Itewration , i = 0 .  0 > 0 false loop end
+
 
 // 750 - 350 , 5
 
@@ -49,6 +54,10 @@ for (var i = numbers.length - 1; i >= 0; i--) {
 }
 
 
+
+
+
+
 var numbers = [10, 20, 30, 40, 50, 60]
 
 for (var i = numbers.length - 2; i >= 0; i -= 10) {
@@ -73,5 +82,5 @@ for (var i = numbers.length - 2; i >= 0; i -= 10) {
 var numbers = [1,2,3,4,5,6]
 
 for (var i = 10; i > 1; i -= 5) {
-    console.log(numbers[i])
+    console.log(numbers[i]) //
 }
