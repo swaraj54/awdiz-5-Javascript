@@ -16,7 +16,7 @@ for (var i = 23; i <= 45; i++) {
         // console.log(count, "count", i ,"I")
     }
 }
-console.log(count)
+console.log(count) // 12
 
 var oddCount = 0;
 var evenCount = 0;
@@ -28,8 +28,8 @@ for (var i = 23; i <= 45; i++) {
         evenCount++;
     }
 }
-console.log(oddCount, "odd count")
-console.log(evenCount, "even count")
+console.log(oddCount, "odd count") // 10
+console.log(evenCount, "even count") // 12
 
 var oddNumbers = [];
 for (var i = 23; i <= 45; i++) {
@@ -63,8 +63,9 @@ var flag = false;
 for (var i = 0; i < array.length; i++) {
     if (array[i] == target) {
         console.log("Found it")
-        flag = true;
+        flag = true; // re assign
     }
+    // i++
 }
 
 if (flag == false) {
@@ -75,7 +76,14 @@ if (flag == false) {
 
 var array = [1, 2, 3, 4];
 
-var target = 8;
+// 1 2   
+// 1 3
+// 1 4  log()
+// 2 3  log()
+// 2 4
+// 3 4
+
+var target = 5;
 
 for (var i = 0; i < array.length; i++) {
     // console.log(array[i])
