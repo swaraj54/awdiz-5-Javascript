@@ -27,8 +27,8 @@ addition(30, 40)
 
 
 // Q
-// var array = [1, 2, 11, 3, 4, 5, 6, 7, 8, 9, 10];
-// var target = 11;
+var array = [1, 2, 11, 3, 4, 5, 6, 7, 8, 9, 10];
+var target = 11;
 
 function findTarget(target, array) {
     // console.log(target, array)
@@ -98,10 +98,11 @@ function Find(number) {
     if (number % 2 == 0) {
         return "Number is even"
     }
-    console.log("hiii")
+   
     if (number > 10) {
         return "NUMBER IS GREATER THAN 10"
     }
+    console.log("hiii")
 }
 
 console.log(Find(14))
