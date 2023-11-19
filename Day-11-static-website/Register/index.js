@@ -13,13 +13,21 @@ function Register(event) {
     if (!name || !email || !password) {
         return alert("All fields are is required")
     }
-    var userData = { name: name, email: email, password: password }
+    var userData = { name: name, email, password }
     // console.log("All fields found.")
 
-    // store data into localstorage
-    localStorage.setItem("Users", JSON.stringify(userData))
+    var users = JSON.parse(localStorage.getItem("Users")) || [];
 
+    users.push(userData)
+
+    localStorage.setItem("Users", JSON.stringify(users))
+
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
 
     alert("Registration Successfull.")
+
+    window.location.href = './../Login/index.html'
 
 }
